@@ -12,10 +12,14 @@
 					<table border="0">
 					  <tbody>
 					    <tr>
-					      <td valign="top" align="center">
-						<%= image_tag( "logos/GCA_logo.png", :id => 1, :alt => "GCA - logo", 
-							:title => "Global Connectivity Alliance", :class => "logo") %>
-						<a target="_blank" href="http://www.global-connectivity.com/"> www.global-connectivity.com </a></td>
+					      <td valign="top" align="center">						
+						    <% image = image_tag( "logos/GCA_logo.png", :id => 1, 
+													:alt => "GCA - logo", :title => "GCA - logo", :class => "logo") %>
+							<% url_path = "http://www.global-connectivity.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.global-connectivity.com", url_path, :target => "_blank"  %>						
+							<%#<a target="_blank" href="http://www.global-connectivity.com/"> www.global-connectivity.com </a>%>
+						  </td>
 					      <td valign="top" align="left"><p><strong>Global Connectivity Alliance</strong> è un Gruppo Economico di Interesse Europeo   costituito per la vendita, la manutenzione e la gestione di un settore   di nicchia della connettività IT per aziende di classe Enterprise.</p></td>
 				        </tr>
 				      </tbody>
@@ -28,9 +32,11 @@
                       <tbody>
                         <tr>
                           <td valign="top" align="center">
-							<%= image_tag( "logos/dacoso_logo.png", :id => 2, :alt => "dacoso - logo", 
-								:title => "dacoso", :class => "logo") %>
-							<a target="_blank" href="http://www.dacoso.com/"> www.dacoso.com </a>
+						    <% image = image_tag( "logos/dacoso_logo.png", :id => 2, 
+													:alt => "dacoso_logo", :title => "dacoso_logo", :class => "logo") %>
+							<% url_path = "http://www.dacoso.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.dacoso.com", url_path, :target => "_blank"  %>	
 						  </td>
                           <td valign="top" align="left">
 							<p><strong>dacoso GmbH</strong> è un'azienda tedesca leader nel settore della   connettività IT. Il suo obbiettivo è quello di fornire soluzioni mirate e   &quot;cost-effective&quot; in funzione delle specifiche esigenze di ogni cliente   nell'implementazione di connettività CED, mel controllo e gestione di   collegamenti DWDM dagli apparati in sala macchine alla connessione della   Fibra ottica.</p>
@@ -60,10 +66,16 @@
 					<table border="0">
 					  <tbody>
 					    <tr>
-					      <td valign="middle" align="center"><br />
-					        <img src="/assets/logos/ATMedia_logo.png" alt="ATMedia - logo" title="ATMedia" /></td>
-					      <td valign="top" align="left"><p><strong>ATMedia</strong> è una società tedesca leader di mercato nella   crittatura di collegamenti ad alta velocità. Le soluzioni fornite sono   ottime per proteggere i collegamenti tra le varie sedi di società che   trattano informazioni sensibili quali istituti finanziari, Banche,   industrie e autorità pubbliche.</p>
-					        <a target="_blank" href="http://www.atmedia.de/"> www.atmedia.de </a></td>
+					      <td valign="top" align="center"><br />						
+						    <% image = image_tag( "logos/ATMedia_logo.png", :id => 3, 
+													:alt => "ATMedia_logo", :title => "ATMedia_logo", :class => "logo") %>
+							<% url_path = "http://www.atmedia.de/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.atmedia.de", url_path, :target => "_blank"  %>
+						  </td>
+					      <td valign="top" align="left">
+							<p><strong>ATMedia</strong> è una società tedesca leader di mercato nella   crittatura di collegamenti ad alta velocità. Le soluzioni fornite sono   ottime per proteggere i collegamenti tra le varie sedi di società che   trattano informazioni sensibili quali istituti finanziari, Banche,   industrie e autorità pubbliche.</p>
+					      </td>
 				        </tr>
 				      </tbody>
 				  </table>
@@ -75,9 +87,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Xiotech_logo.png" alt="Xiotech - logo" title="Xiotech" /></td>
-                          <td valign="top" align="left"><p><strong>Xiotech</strong> è un'azienda Americana, leader nel settore   dell'high-volume, on-demand storage per l'high performance computing   (HPC), digital media, Video on Demand (VOD) ed applicazioni web-oriented   (Web 2.0). L'idea è quella di aiutare le aziende ad ottenere un accesso   pressoché istantaneo ai dati ed ai contenuti di cui hanno bisogno.</p>
-                            <a target="_blank" href="http://www.xiotech.com/"> www.xiotech.com </a></td>
+						    <% image = image_tag( "logos/Xiotech_logo.png", :id => 4, 
+													:alt => "Xiotech_logo", :title => "Xiotech_logo", :class => "logo") %>
+							<% url_path = "http://www.xiotech.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.xiotech.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Xiotech</strong> è un'azienda Americana, leader nel settore   dell'high-volume, on-demand storage per l'high performance computing   (HPC), digital media, Video on Demand (VOD) ed applicazioni web-oriented   (Web 2.0). L'idea è quella di aiutare le aziende ad ottenere un accesso   pressoché istantaneo ai dati ed ai contenuti di cui hanno bisogno.</p>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -89,9 +107,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Brocade_logo.png" alt="Brocade - logo" title="Brocade" /></td>
-                          <td valign="top" align="left"><p><strong>Brocade</strong> è un'azienda americana leader nelle soluzioni di   networking per i centri elettronici. Le loro soluzioni ed i loro servizi   permettono alle organizzazioni di gestire le vitali risorse   informative. Ed è per questo che aziende fra le prime 500 a livello   mondiale si affidano a tecnologie di Brocade per mantenere attivo H24 il   loro business.</p>
-                            <a target="_blank" href="http://www.brocade.com/"> www.brocade.com </a></td>
+						    <% image = image_tag( "logos/Brocade_logo.png", :id => 5, 
+													:alt => "brocade_logo", :title => "brocade_logo", :class => "logo") %>
+							<% url_path = "http://www.brocade.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.brocade.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Brocade</strong> è un'azienda americana leader nelle soluzioni di   networking per i centri elettronici. Le loro soluzioni ed i loro servizi   permettono alle organizzazioni di gestire le vitali risorse   informative. Ed è per questo che aziende fra le prime 500 a livello   mondiale si affidano a tecnologie di Brocade per mantenere attivo H24 il   loro business.</p>
+						  </td>
                         </tr>
                       </tbody>
                     </table>
@@ -103,9 +127,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Ciena_logo.png" alt="Ciena - logo" title="Ciena" /></td>
-                          <td valign="top" align="left"><p><strong>Ciena</strong> Corporation è un'azienda leader nel mercato   dell'infrastruttura di rete. Con la sua esperienza nella fibra ottica e   nelle reti ethernet, riesce a fornire soluzioni hardware e software   altamente scalabili e flessibili che ben si adattano alle attuali   esigenze di mercato. Non a caso le sue soluzioni formano la base   portante delle infrastrutture IT di molte delle più grandi società di   classe enterprise, di carrier, di service provider, di enti governativi e   di centri di ricerca.</p>
-                            <a target="_blank" href="http://www.ciena.com/"> www.ciena.com </a></td>
+							    <% image = image_tag( "logos/Ciena_logo.png", :id => 6, 
+														:alt => "Ciena_logo", :title => "Ciena_logo", :class => "logo") %>
+								<% url_path = "http://www.ciena.com/" %>													
+						     	<%= link_to image, url_path, :target => "_blank"  %>
+			        		    <%= link_to "www.ciena.com", url_path, :target => "_blank"  %>
+							  </td>
+                          <td valign="top" align="left">
+							<p><strong>Ciena</strong> Corporation è un'azienda leader nel mercato   dell'infrastruttura di rete. Con la sua esperienza nella fibra ottica e   nelle reti ethernet, riesce a fornire soluzioni hardware e software   altamente scalabili e flessibili che ben si adattano alle attuali   esigenze di mercato. Non a caso le sue soluzioni formano la base   portante delle infrastrutture IT di molte delle più grandi società di   classe enterprise, di carrier, di service provider, di enti governativi e   di centri di ricerca.</p>
+						  </td>
                         </tr>
                       </tbody>
                     </table>
@@ -131,9 +161,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/InfoGuard_logo.png" alt="InfoGuard - logo" title="InfoGuard" /></td>
-                          <td valign="top" align="left"><p><strong>InfoGuard</strong> è una società Svizzera leader di mercato nelle   soluzioni di crittatura per reti ottiche. Gli esperti in crittatura   della InfoGuard sviluppano, producono e testano i loro appliance di   crittatura interamente nelle loro fabbriche e laboratori svizzeri.   Essendo una azienda Svizzera la InfoGuard garantisce prodotti di alta   qualità con funzioni di sicurezza ed implementazione degli algoritmi di   crittatura sviluppati in assoluta indipendenza e segretezza.</p>
-                            <a target="_blank" href="http://www.infoguard.com/"> www.infoguard.com </a></td>
+						    <% image = image_tag( "logos/InfoGuard_logo.png", :id => 7, 
+													:alt => "InfoGuard_logo", :title => "InfoGuard_logo", :class => "logo") %>
+							<% url_path = "http://www.infoguard.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.infoguard.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>InfoGuard</strong> è una società Svizzera leader di mercato nelle   soluzioni di crittatura per reti ottiche. Gli esperti in crittatura   della InfoGuard sviluppano, producono e testano i loro appliance di   crittatura interamente nelle loro fabbriche e laboratori svizzeri.   Essendo una azienda Svizzera la InfoGuard garantisce prodotti di alta   qualità con funzioni di sicurezza ed implementazione degli algoritmi di   crittatura sviluppati in assoluta indipendenza e segretezza.</p>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -145,9 +181,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Intercom_logo.png" alt="Intercom - logo" title="Intercom" /></td>
-                          <td valign="top" align="left"><p><strong>Intercom Computer Systems</strong> è una società Tedesca leader di   mercato nelle soluzioni di interfacciamento verso l'ambiente MainFrame   che si traduce in soluzioni di emulazione. </p>
-                            <a target="_blank" href="http://www.intercom.com/"> www.intercom.com </a></td>
+						    <% image = image_tag( "logos/Intercom_logo.png", :id => 8,
+													:alt => "Intercom_logo", :title => "Intercom_logo", :class => "logo") %>
+							<% url_path = "http://www.intercom.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.intercom.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Intercom Computer Systems</strong> è una società Tedesca leader di   mercato nelle soluzioni di interfacciamento verso l'ambiente MainFrame   che si traduce in soluzioni di emulazione. </p>
+						  </td>
                         </tr>
                       </tbody>
                     </table>
@@ -159,9 +201,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Obtain_logo.png" alt="Obtain - logo" title="Obtain" /></td>
-                          <td valign="top" align="left"><p><strong>Obtain Knowledge Flow</strong> Corporation è una società Canadese   leader di mercato nelle soluzioni software di gestione   dell'infrastruttura dei CED. A partire della connettività in fibra   ottica ed in rame, fino alla gestione dell'impianto elettrico.</p>
-                            <a target="_blank" href="http://www.obtain.com/"> www.obtain.com </a></td>
+						    <% image = image_tag( "logos/Obtain_logo.png", :id => 9,
+													:alt => "Obtain_logo", :title => "Obtain_logo", :class => "logo") %>
+							<% url_path = "http://www.obtain.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.obtain.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Obtain Knowledge Flow</strong> Corporation è una società Canadese   leader di mercato nelle soluzioni software di gestione   dell'infrastruttura dei CED. A partire della connettività in fibra   ottica ed in rame, fino alla gestione dell'impianto elettrico.</p>
+                          </td>
                         </tr>
                       </tbody>
                   </table>
@@ -174,9 +222,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Optica_logo.png" alt="Optica - logo" title="Optica" /></td>
-                          <td valign="top" align="left"><p><strong>Optica Technologies</strong> è una società americana leader di mercato   nelle soluzioni di interconnessione tra sistemi MainFrame e periferiche.   Il loro core business è caratterizzato da convertitori di canale FICON   to ESCON ed ESCON to BUS/TAG.</p>
-                            <a target="_blank" href="http://www.optica.com/"> www.optica.com </a></td>
+						    <% image = image_tag( "logos/Optica_logo.png", :id => 10,
+													:alt => "Optica_logo", :title => "Optica_logo", :class => "logo") %>
+							<% url_path = "http://www.optica.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.optica.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Optica Technologies</strong> è una società americana leader di mercato   nelle soluzioni di interconnessione tra sistemi MainFrame e periferiche.   Il loro core business è caratterizzato da convertitori di canale FICON   to ESCON ed ESCON to BUS/TAG.</p>
+						  </td>
                         </tr>
                       </tbody>
                     </table>
@@ -188,9 +242,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Shunra_logo.png" alt="Shunra - logo" title="Shunra" /></td>
-                          <td valign="top" align="left"><p><strong>Shunra</strong> è una società americana pioniere e leader di mercato   nel certificare in anticipo le prestazioni delle applicazioni business e   dei servizi di rete per gli utenti finali delle sedi periferiche;   ancora prima del rilascio in produzione. La sede principale è a   Philadelphia in Pennsylvania ed il centro di ricerca e sviluppo a Kfar   Saba in Israele. Altra sede di riferimento in U.S.A è a New York mentre   per l’Europa la sede di riferimento è in Gran Bretagna.</p>
-                            <a target="_blank" href="http://www.shunra.com/"> www.shunra.com </a></td>
+							    <% image = image_tag( "logos/Shunra_logo.png", :id => 11,
+														:alt => "Shunra_logo", :title => "Shunra_logo", :class => "logo") %>
+								<% url_path = "http://www.shunra.com/" %>													
+						     	<%= link_to image, url_path, :target => "_blank"  %>
+			        		    <%= link_to "www.shunra.com", url_path, :target => "_blank"  %>
+							  </td>
+                          <td valign="top" align="left">
+							<p><strong>Shunra</strong> è una società americana pioniere e leader di mercato   nel certificare in anticipo le prestazioni delle applicazioni business e   dei servizi di rete per gli utenti finali delle sedi periferiche;   ancora prima del rilascio in produzione. La sede principale è a   Philadelphia in Pennsylvania ed il centro di ricerca e sviluppo a Kfar   Saba in Israele. Altra sede di riferimento in U.S.A è a New York mentre   per l’Europa la sede di riferimento è in Gran Bretagna.</p>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -202,9 +262,15 @@
                       <tbody>
                         <tr>
                           <td valign="middle" align="center"><br />
-                            <img src="/assets/logos/Visara_logo.png" alt="Visara - logo" title="Visara" /></td>
-                          <td valign="top" align="left"><p><strong>Visara</strong> è una società americana leader di mercato nelle   soluzioni di emulazione master console, front end processors (FEP),   communication servers, stampanti e displays. Visara si è focalizzata su   quelle società che sono ancora costrette ad utilizzare prodotti   end-of-life e su quelle che stanno cercando un passaggio graduale alle   nuove tecnologie.</p>
-                            <a target="_blank" href="http://www.visara.com/"> www.visara.com </a></td>
+						    <% image = image_tag( "logos/Visara_logo.png", :id => 12,
+													:alt => "Visara_logo", :title => "Visara_logo", :class => "logo") %>
+							<% url_path = "http://www.visara.com/" %>													
+					     	<%= link_to image, url_path, :target => "_blank"  %>
+		        		    <%= link_to "www.visara.com", url_path, :target => "_blank"  %>
+						  </td>
+                          <td valign="top" align="left">
+							<p><strong>Visara</strong> è una società americana leader di mercato nelle   soluzioni di emulazione master console, front end processors (FEP),   communication servers, stampanti e displays. Visara si è focalizzata su   quelle società che sono ancora costrette ad utilizzare prodotti   end-of-life e su quelle che stanno cercando un passaggio graduale alle   nuove tecnologie.</p>
+                          </td>
                         </tr>
                       </tbody>
                     </table>

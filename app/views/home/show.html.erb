@@ -5,11 +5,25 @@
     <div id="featured" > 
       <div class="content" style="" >
   	  </div>
-		<%= image_tag( 'orbit_slidercontainer/img04.jpg', :alt => "Overflow: Hidden No More") %>
-		<%= image_tag( 'orbit_slidercontainer/img07.jpg', :alt => "HTML Captions",
+      	<%= image_tag( "orbit_slidercontainer/img04.jpg", :id => 1, 
+						:alt => "Overflow: Hidden No More", :title => "Overflow",
+						:class => "") %>
+      	<%= image_tag( "orbit_slidercontainer/img07.jpg", :id => 2, 
+						:alt => "HTML Captions", :title => "HTML Captions",
+						'data-caption' => "#htmlCaption", :class => "") %>
+      	<%= image_tag( "orbit_slidercontainer/img08.jpg", :id => 3, 
+						:alt => "and more features", :title => "and more features",
+						'data-caption' => "#htmlCaption", :class => "") %>
+      	<%= image_tag( "orbit_slidercontainer/overflow.jpg", :id => 4, 
+						:alt => "and more features", :title => "and more features",
+						:class => "") %>
+
+
+		<%# image_tag( 'orbit_slidercontainer/img04.jpg', :alt => "Overflow: Hidden No More") %>
+		<%# image_tag( 'orbit_slidercontainer/img07.jpg', :alt => "HTML Captions",
 			'data-caption' => "#htmlCaption") %>
-		<%= image_tag( 'orbit_slidercontainer/img08.jpg', :alt => "and more features") %>
-		<%= image_tag( 'orbit_slidercontainer/overflow.jpg', :alt => "and more features") %>
+		<%# image_tag( 'orbit_slidercontainer/img08.jpg', :alt => "and more features") %>
+		<%# image_tag( 'orbit_slidercontainer/overflow.jpg', :alt => "and more features") %>
 	
 	<%#	
     	<img src="/assets/orbit_slidercontainer/img04.jpg" alt="Overflow: Hidden No More" >
@@ -48,8 +62,9 @@
   				<h2 class="title" ><a href="#" >Xiotech Storage Blades</a></h2> 
   				<div class="entry" >
   					<p>
-						<%= image_tag( 'mainmenu/img11.jpg', :alt => "unknown",
-						 :width => "560", :height => "270", :class => "") %>
+	        	        <%= image_tag( "mainmenu/img11.jpg", :id => 5, 
+												:alt => "xio", :title => "xio",
+												:width => "560", :height => "270", :class => "") %>
   						<%# <img src="/images/mainmenu/img11.jpg" width="560" height="270" alt="" > %>
 						Uno Storage Blade da 3U che può essere utilizzato per i carichi di lavoro misti o dedicati ed essere integrata intelligentemente in varie infrastrutture direct-attached o switch-attached.
             </p>
