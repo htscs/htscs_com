@@ -1,0 +1,62 @@
+<%= render 'shared/nav_menu' %>
+
+<div id="indexpage">
+  <div id="page-bgtop">
+		<div id="content">
+
+			<div class="post">
+				<p class="meta"> Posted by <a href="#">Marketing Team</a></p>
+				<h2 class="title"><a href="#">Mainframe ed Open Systems</a></h2>
+				<div class="entry">
+					<p>Con il termine mainframe si indicano computer che possono supportare   simultaneamente migliaia di applicazioni e devices di input/output.   Questo ha permesso lo sviluppo dei primi grandi centri di elaborazione   dati ed è ancora una base portante delle attuali infrastrutture IT.</p>
+					<p>&nbsp;</p>
+			  </div>
+				<div></div>
+			</div>
+
+			<div class="post">				
+				<h2 class="title"><a href="#">Evoluzione dei CED</a></h2>
+				<div class="entry">
+					<p> Dal 2000 nei CED si sono iniziate ad affiancare differenti soluzioni non   proprietarie che si discostavano dal concetto di mainframe ed   introducevano al mondo dell'open systems con le prime installazioni del   SO Linux sui sistemi zSeries.   Anche se la spinta attuale è verso gli ambienti Open Systems l'ambiente   mainframe è a tutt'oggi presente ed in continua evoluzione. L'evolzione   del mainframe porta con se la sua retro-compatibilità con alcuni   ambienti mission critical che ancora silenziosamente portano avanti   fondamentali attività di business.   Un esempio di alcuni vecchi protocolli mission critical ancora   utilizzati sono BSC, SNI e NPSI che interfacciano le CPU con le 3745/46   (FEP). Ogni volta che avviene una fusione, un'acquisizione o un nuovo   piano di BC/DR, c'è un FEP coinvolto. </p>
+					<p> La stessa connessione fisica tra le CPU ed i devices di input/output ha   subito un'evoluzione tecnologica passando da collegamenti in parallelo   su cavi di rame (BUS/TAG) a collegamenti seriali su fibre ottiche   attraversate da luce LED definiti Enterprise Systems CONnection(ESCON)   fino agli attuali collegamenti in fibra ottica con luce laser definiti   più semplicemente FIber CONnection (FICON).  Per riuscire a gestire più connessioni tra CPUs e devices si è reso   necessario l'utilizzo di sofisticati apparati che permettessero   interconnessioni interne per comunicazioni di tipo molti-a-molti. Questi   apparati a seconda della tipologia di segnali ottici utilizzati   prendono il nome di ESCON directors o FICON directors. </p>
+          <p> Al pari dei collegamenti e degli apparati di elaborazione dati anche gli   apparati per l'archiviazione dell'informazione hanno subito il processo   evolutivo nei vari &quot;stadi&quot; dell'Information Life Management.  Per quanto riguarda l'archiviazione a lungo termine ad esempio si è   passati da supporti su open-reel 3420 a supporti a cartucce 3480, 3490   fino agli attuali LTO. La lettura dei vecchi supporti avveniva tramite   le ingombranti C.U. che sono oggi sostituibili da soluzioni di   emulazione.  Le soluzioni storage solo da poco stanno iniziando ad essere compatibili   sia per l'ambiente mainframe che per l'ambiente open. Soluzioni di   emulazione aiutano molto in questa integrazione. </p>
+			  </div>
+  			<div>
+  			  <%= link_to "torna alla homepage", root_path, :class => "links" %>
+  			</div>
+		  </div>
+		  
+		</div>
+    		<!-- end #content -->
+
+    		<div id="indexsidebar">
+    			<ul>
+    				<li>
+    					<h3>Go Green</h3>
+    					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+    				</li>
+    				<li>
+              <%= render 'shared/portfolio' %>
+    				</li>
+    				<li>
+              <%= render 'shared/soluzioni' %>
+    				</li>
+    			</ul>
+    		</div>
+    <!-- end #sidebar -->
+
+
+    		<div style="clear: both;">
+    			&nbsp;
+    		</div>
+    	</div>
+    <!-- end #page -->
+    </div>
+
+
+    <div id="footer">
+    	<p>
+    		Copyright (c) 2011 htscs srl. All rights reserved.
+    	</p>
+    </div>
+    <!-- end #footer -->

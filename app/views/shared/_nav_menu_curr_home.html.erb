@@ -1,0 +1,25 @@
+<div id="indexmenu">
+	<ul>
+		<li>
+		  <%= link_to "Homepage", root_path, @home_class %>
+		</li>
+		<li>
+		  <%= link_to "Partners", partners_path %>
+		</li>
+		<li>
+		  <%= link_to "Prodotti", prodotti_path %>
+		</li>
+		<li>
+		  <%= link_to "Azienda", azienda_path %>
+		</li>
+		<li>
+		  <%= link_to "Contatti", contatti_path %>
+		</li>
+		<% if signed_in? %>
+      <li><%= link_to "Esci", signout_path %></li>
+    <% else %>
+      <li><%= link_to "Login", signin_path %></li>
+    <% end %>
+	</ul>
+</div>
+<!-- end #menu -->

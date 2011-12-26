@@ -1,0 +1,126 @@
+<%= render 'shared/nav_menu' %>
+
+  <!--inizio slides-->
+  <div id="slidercontainer" >
+    <div id="featured" > 
+      <div class="content" style="" >
+  	  </div>
+		<%= image_tag( 'orbit_slidercontainer/img04.jpg', :alt => "Overflow: Hidden No More") %>
+		<%= image_tag( 'orbit_slidercontainer/img07.jpg', :alt => "HTML Captions",
+			'data-caption' => "#htmlCaption") %>
+		<%= image_tag( 'orbit_slidercontainer/img08.jpg', :alt => "and more features") %>
+		<%= image_tag( 'orbit_slidercontainer/overflow.jpg', :alt => "and more features") %>
+	
+	<%#	
+    	<img src="/assets/orbit_slidercontainer/img04.jpg" alt="Overflow: Hidden No More" >
+    	<img src="/assets/orbit_slidercontainer/img07.jpg" alt="HTML Captions" data-caption="#htmlCaption" >
+    	<img src="/assets/orbit_slidercontainer/img08.jpg" alt="and more features" >
+    	<img src="/assets/orbit_slidercontainer/overflow.jpg" alt="and more features" >
+	%>
+	
+    </div>
+  		<!-- Captions for Orbit -->
+  		<span class="orbit-caption" id="htmlCaption" ><strong>Xiotech ISE Blade Storage</strong> Greater than 12000 IOPS in 3U |  <a href="http://www.xiotech.com/" >xiotech.com</a> |<em> HtSCS</em> Authorized Dealer</span>
+  </div>
+  <!--fine slides-->
+  
+  <div id="indexpage" >
+  	<div id="page-bgtop" >
+  		<div id="content" >
+  			<div class="post" >
+  				<p class="meta" >
+  					Posted by <a href="#" >Marketing Team</a>
+  				</p>
+  				<h2 class="title" ><a href="#" >Welcome to HtSCS's Website</a></h2> 
+  				<div class="entry" >
+  					<p>
+  						Benvenuti in <strong>HtSCS </strong>, una società di consulenza informatica che si occupa specificatamente di rivendita per il territorio italiano dello Storage Xiotech, <a href="http://www.xiotech.com" >(xiotech.com)</a>, dei prodotti per la crittografia Infoguard <a href="http://www.infoguard.com/" >(Infoguard.com)</a>, e delle soluzioni Shunra <a href="http://www.shunra.com" >(Shunra.com)</a>, oltre a varie soluzioni dedicate ai grandi centri elettronici che spaziano dal cablaggio intelligente in fibra ottica a soluzioni di Legacy Tape Emulator e FEP emulator. 
+  					</p>
+  				</div>
+  				<div>
+  					<a href="#" class="links" >Leggi tutto</a>
+  				</div>
+  			</div>
+  			<div class="post" >
+  				<p class="meta" >
+  					Posted by <a href="#" >Marketing Team</a>
+  				</p>
+  				<h2 class="title" ><a href="#" >Xiotech Storage Blades</a></h2> 
+  				<div class="entry" >
+  					<p>
+						<%= image_tag( 'mainmenu/img11.jpg', :alt => "unknown",
+						 :width => "560", :height => "270", :class => "") %>
+  						<%# <img src="/images/mainmenu/img11.jpg" width="560" height="270" alt="" > %>
+						Uno Storage Blade da 3U che può essere utilizzato per i carichi di lavoro misti o dedicati ed essere integrata intelligentemente in varie infrastrutture direct-attached o switch-attached.
+            </p>
+  					<p>
+  						Le Blade ISE forniscono il fondamento per tutte le soluzioni di memoria Xiotech, prestazioni senza precedenti, affidabilità e scalabilità.
+  				  </p>
+  					<p> <a href="http://twitter.com/xiotech" ><img src="/images/social_networks/xiotech_twitter.png" width="205" height="112" alt="Twitter" ></a> <span class="GoGreen" > ...follow @xiotech on twitter</span>
+  					</p>
+  				</div> <!-- end #entry -->
+  				<div>
+  					<a href="http://www.xiotech.com" class="links" >Leggi tutto</a>
+  				</div> 
+  			</div> <!-- end #post -->
+  		</div><!-- end #content -->
+  		
+  		<div id="indexsidebar" >
+  			<ul>
+  				<li>  				  
+            <!--h3>HTSCS Tweets</h3-->
+            <script src="http://widgets.twimg.com/j/2/widget.js" ></script> <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'search',
+              search: '#storage OR #IBM OR #fiberoptic OR #cloudcomputing OR #EMC',
+              interval: 6000,
+              title: 'HtSCS\'s',
+              subject: 'Tweets',
+              width: 241,
+              height: 300,
+              theme: {
+                shell: {
+                  background: '#091919',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#ffffff',
+                  color: '#444444',
+                  links: '#1985b5'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: true,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: true,
+                toptweets: true,
+                behavior: 'default'
+              }
+            }).render().start();
+            </script> 
+  				</li>
+  				<li>
+            <%= render 'shared/portfolio' %>
+  				</li>
+  				<li>
+            <%= render 'shared/soluzioni' %>
+  				</li>
+  			</ul>
+  		</div> <!-- end #sidebar -->
+
+  		<div style="clear:both; font-family:Arial, Helvetica, sans-serif; " >
+  			&nbsp;
+  		</div>
+
+  	</div> <!-- end #page-bgtop -->
+  </div> <!-- end #indexpage -->
+  
+  <div id="indexfooter" >
+  	<p>
+  		Copyright (c) 2011 htscs srl. All rights reserved
+  	</p>
+  </div> <!-- end #footer -->

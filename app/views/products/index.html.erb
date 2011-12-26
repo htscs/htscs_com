@@ -1,0 +1,124 @@
+<%= render 'shared/nav_menu' %>
+
+<div id="indexpage">
+	<div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">Prodotti</a></h2> 
+				<div class="entry">
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/ise.jpg" alt="xiotech"/> 
+						<div class="cover boxcaption">
+					    <h3>ISE Storage Blade </h3> 
+							<p>
+								Xiotech garantisce prestazioni senza precedenti
+							  <br />
+								<br />
+								<%= link_to "leggi...", "http://www.xiotech.com/products-services/ise-storage-blade/", :class => "external_link" , :target => "_blank" %>        			  
+							</p>
+						</div>
+					</div>
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/infoguard.png" alt="infoguard" /> 
+						<div class="cover boxcaption">
+					    <h3>Infoguard </h3> 
+							<p>
+								Tecnologia Svizzera per la Sicurezza dei Dati
+							  <br />
+								<br />
+								<%= link_to "leggi...", prodotti_atmedia_infoguard_path, :class => "internal_link"  %>        			  								
+							</p>
+						</div>
+					</div>
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/Cabling.png" alt="cabling"/> 
+						<div class="cover boxcaption">
+							<h3>IFS9000</h3> 
+							<p>
+								Cablaggio in fibra ottica “intelligente"
+							  <br />
+								<br />
+								<%= link_to "leggi...", prodotti_ifs9000_path, :class => "internal_link"  %>								
+							</p>
+						</div>
+					</div>
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/Shunra.png" alt="shunra"/> 
+						<div class="cover boxcaption">
+							<h3>Network Simulator</h3> 
+							<p>
+								Wan, Web, Mobile, Cloud
+								<br />
+								<br />
+								<%= link_to "leggi...", prodotti_shunra_path, :class => "internal_link"  %>
+							</p>
+						</div>
+					</div>
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/Chamaleon.png" alt="chameleon"/> 
+						<div class="cover boxcaption">
+							<h3>Legacy Emulator</h3> 
+							<p>
+								Emulazione CU per utilizzo Legacy Tape 3420,3480,3490
+								<br />
+								<br />
+								<%= link_to "leggi...", prodotti_chameleon_path, :class => "internal_link"  %>
+							</p>
+						</div>
+					</div>
+					<div class="boxgrid caption">
+						<img src="/assets/mainmenu/Hopf.png" alt="hopf"/> 
+						<div class="cover boxcaption">
+							<h3>Hopf System</h3> 
+							<p>
+								Network Time Server
+							  <br />
+								<br />
+								<%= link_to "leggi...", prodotti_hopf_path, :class => "internal_link"  %>								
+							</p>
+						</div>
+					</div>
+					
+	        <p><img src="/assets/frames_and_lines/separatore.png" alt="separatore" hspace="180" /></p>
+					
+          <div>
+            <%= link_to "torna alla homepage", root_path, :class => "links" %>
+					</div>
+				
+				</div>
+	
+			</div>
+		</div>
+		<!-- end #content -->
+
+		<div id="indexsidebar">
+			<ul>
+				<li>
+					<h3>Go Green</h3>
+					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+				</li>
+				<li>
+          <%= render 'shared/portfolio' %>
+				</li>
+				<li>
+          <%= render 'shared/soluzioni' %>
+				</li>
+			</ul>
+		</div>
+<!-- end #sidebar -->
+
+
+		<div style="clear: both;">
+			&nbsp;
+		</div>
+	</div>
+<!-- end #page -->
+</div>
+
+
+<div id="footer">
+	<p>
+		Copyright (c) 2011 htscs srl. All rights reserved.
+	</p>
+</div>
+<!-- end #footer -->

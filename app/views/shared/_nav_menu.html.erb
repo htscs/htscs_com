@@ -1,0 +1,86 @@
+<div id="indexlogo">
+
+
+  <div id="upmenu">
+    <% if signed_in? %>
+      <%= link_to "logout", signout_path, :class => @signed_in_class %>
+    <% else %>
+      <%= link_to "Login", signin_path, :class => @signed_in_class %>
+    <% end %>
+  	<%= link_to "Contatti", contatti_path, :class => @contatti_class %>
+  	<%= link_to "site map", contatti_path, :class => @site_map_class %>
+  </div>
+  
+	<div id="socialicons">  
+	  <% image_path_png = "/assets/social_networks/facebook.png" %>
+    <% image_title = "facebook htscs"%>
+    <% dropbox_path_public_pdf = "http://www.facebook.com/pages/HtSCS/120082184723711" %>
+    <% image = image_tag( image_path_png, :id => 18, :alt => image_title, :width => "35", :height => "35", :class => "") %>
+    <%= link_to image, dropbox_path_public_pdf, :target => "_blank"  %>
+    
+
+	  <% image_path_png = "/assets/social_networks/twitter.png" %>
+    <% image_title = "twitter htscs"%>
+    <% dropbox_path_public_pdf = "http://twitter.com/htscs" %>
+    <% image = image_tag( image_path_png, :id => 18, :alt => image_title, :width => "35", :height => "35", :class => "") %>
+    <%= link_to image, dropbox_path_public_pdf, :target => "_blank"  %>
+
+	  <% image_path_png = "/assets/social_networks/rss.png" %>
+    <%= image_tag( image_path_png, :id => 18, :alt => image_title, :width => "35", :height => "35", :class => "") %>
+  </div>
+
+	<h1>HtSCS</h1> 
+	<p><em> Hightech Storage Connectivity System </em></p>
+	
+</div><!-- end #logo -->
+
+
+<div class="breadcrumbs">
+  <%= @breadcrumbs %>  
+</div>
+
+<div id="indexheader" >
+    
+  <div id="indexmenu">
+  	<ul>
+  		<li>
+  		  <%= link_to "Homepage", root_path, :class => @home_class %>
+  		</li>
+  		<li>
+  		  <%= link_to "Partners", partners_path, :class => @partners_class %>
+  		</li>
+  		<li>
+  		  <%= link_to "Prodotti", prodotti_path, :class => @prodotti_class %>
+  		</li>
+  		<li>
+  		  <%= link_to "Azienda", azienda_path, :class => @azienda_class %>
+  		</li>
+  		<li>
+  		  <%= link_to "Contatti", contatti_path, :class => @contatti_class %>
+  		</li>
+  		<%# if signed_in_partner? %>
+      
+        <!-- <li><%= link_to "Partner download", signin_path, :class => @signed_in_class %></li> -->
+
+      <%# else %>
+        <li>
+          <%= link_to "Download", download_path, :class => @download_class %>
+        </li>
+      <%# end %>
+  	</ul>
+  </div>
+  <!-- end #menu -->
+  
+  <!--
+  	<div id="search" >
+  		<form method="get" action="" >
+  			<fieldset>
+  				<input type="text" name="s" id="search-text" size="15" /> 
+  			</fieldset>
+  		</form>
+  	</div>
+  -->
+  <!-- end #search -->
+
+</div>
+<!-- end #header -->

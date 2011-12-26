@@ -1,0 +1,65 @@
+<%= render 'shared/nav_menu' %>
+
+<div id="indexpage">
+  <div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<p class="meta"> Posted by <a href="#">Marketing Staff</a></p>
+				<h2 class="title"><a href="#">HtSCS S.r.l.</a></h2>
+				<div class="entry">
+					<p>Hightek Storage Connectivity Systems (HtSCS) srl è una società costituita nel 2005 che riunisce in un organico eterogeneo e una selezionata forza lavoro di comprovata e pluriennale esperienza nel campo dell' Information Technology. </p>
+					<p>
+						<%= image_tag( 'mainmenu/Abstract View.jpg', :alt => "CityBuilding",
+						 :width => "557", :height => "395", :class => "") %>
+						<%# image_tag('mainmenu/Abstract View.jpg', :size => "557x395", 
+							:alt => "CityBuilding")%>
+						<%# <img src="/assets/mainmenu/Abstract View.jpg" alt="CityBuilding" width="557" height="395" align="absmiddle" /> %>
+					</p>
+					</div>
+				<div></div>
+			</div>
+			<div class="post">
+				
+				<h2 class="title"><a href="#">Soluzioni Innovative / Legacy</a></h2>
+				<div class="entry">
+					<p> Il know how del collettivo raccoglie esperienze, in ambienti Open e   Mainframe di classe Enterprise o PMI, di: </p>
+					<ul>
+					  <li><strong>DR/BS (Disaster Recovery / Bussiness Continuity)</strong></li>
+					  <li><strong>Sicurezza informatica</strong></li>
+					  <li><strong>Estensione e remotizzazione dei canali (FC, FICON, ESCON,   BUS/TAG)</strong></li>
+					  <li><strong>Storage DASD</strong></li>
+					  <li><strong>Tape</strong></li>
+					  <li><strong>Infrastrutture SAN, LAN, MAN, WAN</strong><br /> </li></ul>
+					    <h4>Ritorno dell'investimento in primo piano</h4>				     
+					  <p>Molti utenti dell'IT necessitano oggi, non solo di nuovi prodotti da cui trarre immediati benefici e ritorni economici, ma anche di un adeguato servizio professionale per ottenere un ottimale ILM (Information Life Management) in linea con le proprie strategie aziendali. Hightek Storage Connectivity System seleziona prodotti innovativi di primari costruttori e si propone ai propri clienti fornendo una completa assistenza pre/post vendita unita ad un servizio di “professional” per l'integrazione dei prodotti all'interno delle tecnologie informatiche. </p>
+                  
+</div>
+				<div>
+				  <%= link_to "torna alla homepage", root_path, :class => "links" %>
+				</div>
+		  </div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h3>Go Green</h3>
+					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+				</li>
+				<li>
+          <%= render 'shared/portfolio' %>
+				</li>
+				<li>
+          <%= render 'shared/soluzioni' %>
+				</li>
+			</ul>
+</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2010 htscs srl. All rights reserved</p>
+</div>
+<!-- end #footer -->

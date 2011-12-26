@@ -1,0 +1,69 @@
+<div id="header">
+
+  <div id="logo">
+  	<h1>HtSCS</h1> 
+  	<p><em> Hightech Storage Connectivity System </em></p>
+  </div>
+  
+  <%= render 'shared/nav_menu_curr_home' %>
+
+</div>
+<!-- end #header -->
+<hr />
+
+  <div id="page">
+  	<div id="page-bgtop">
+  		<div id="content">
+	
+
+  			<div class="post">
+  				<h2 class="title"><a href="#">Registrazione Area riservata</a></h2> 
+  				<div class="entry contact">
+
+            <%= form_for(@user) do |f| %>
+              <%= render "form", :f => f %>
+              <div class="actions">
+                <%= f.submit "Registrati"%>
+              </div>
+            <% end %>
+
+
+            <% flash.each do |key, value| %>
+              <div class="flash <%= key %>"><%= value %></div>
+            <% end %>
+  				</div>
+				    <%= link_to "torna alla homepage", root_path, :class => "links" %>
+  				<div>
+  				</div>
+  			</div>	
+
+  		</div>
+  <!-- end #content -->
+  		<div id="indexsidebar">
+  			<ul>
+  				<li>
+  					<h3>Go Green</h3>
+  					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+  				</li>
+  				<li>
+            <%= render 'shared/portfolio' %>
+  				</li>
+  				<li>
+            <%= render 'shared/soluzioni' %>
+  				</li>
+  			</ul>
+  		</div>
+  <!-- end #sidebar -->
+  		<div style="clear: both; font-family: Arial, Helvetica, sans-serif;">
+  			&nbsp;
+  		</div>
+  	</div>
+  <!-- end #page -->
+  </div>
+  <div id="footer">
+  <!-- 	<p>Copyright (c) 2010 htscs srl. All rights reserved | Design by <a href="www.fbfwebdesign.com">FBF Webdesign</a></p> -->
+  	<p>
+  		Copyright (c) 2011 htscs srl. All rights reserved
+  	</p>
+  </div>
+  <!-- end #footer -->

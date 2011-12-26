@@ -1,0 +1,101 @@
+<%= render 'shared/nav_menu' %>
+
+<div id="indexpage">
+  <div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<p class="meta"> Posted by <a href="#">Marketing Team</a></p>
+				<h2 class="title"><a href="#">Sincronizzazione</a></h2>
+				<div class="entry">
+					<h4>L'importanza di essere sincronizzati</h4>
+					<p>Avere uno stesso sitema di riferimento è importante in ogni ambito, e questo è ancor più vero in ambienti in cui i tempi di risposta e le elaborazioni delle informazioni viaggiano a velocità elevate. Una squadra gioca bene se è coordinata e precisa nell'eseguire gli schemi di gioco. Lo stesso vale nell'infrastruttura IT. A &quot;dare il tempo&quot; per un perfetto sincronismo all'interno dell'infrastruttura IT sono gli apparati di rete denominati Network Time Servers (o Masterclocks).</p>
+				</div>
+				<div></div>
+			</div>
+			<div class="post">
+				
+				<h2 class="title"><a href="#">Network Time Servers</a>				</h2>
+				<div class="entry">
+					<p>Network Time Servers
+
+La loro funzione è quella di essere il riferimento orario per tutti gli apparati dotati di un proprio orologio interno (quarzo) che possano ricevere un qualsivoglia segnale di sincronizzazione. Nel mondo degli affari di oggi, altamente tecnologico, un Network Time Server è un elemento fondamentale dell'infrastruttura IT. Un network time server fornisce un modo semplice ed efficiente per sincronizzare il clock interno di desktop, servers, ed altri apparati connessi alla rete aziendale. Il network time server permette di sincronizzare la rete aziendale con un segnale esterno estremamente accurato fornito dagli orologgi atomici installati sui satelli del sistema GPS. Questo fa sì che le transazioni e le comunicazioni fra reti aziendali diverse possano essere strettamente sincronizzate. Senza un nts l'azienda può andare in contro ad un numero elevato di problemi che possono impattare sulle performance se non addirittura danneggiare il business.
+
+Vantaggi della sincronizzazione in ambito industriale:
+    </p>
+					<p>* sincronizzazione dei sistemi di controllo (DCS e PLC)
+				  </p>
+					<p>* sincronizzazione registratori di eventi
+				    </p>
+					<p>* sincronizzazione e funzionalità dei sistemi di protezioni elettriche
+					  
+					  Vantaggi della sincronizzazione in ambito IT:
+				    </p>
+					<p>* performance negli apparati di rete che processano in funzione dei timestamp
+				    </p>
+					<p>* performance e funzionalità per le applicazioni a livello OSI7 basate sui timestamp
+				    </p>
+					<p>* ricerca di guasti o malfunzionamenti tra le logs dei vari apparati
+				    </p>
+					<p>* performance e funzionalità nei database transazionali distribuiti
+				    </p>
+					<p>* Affidabilità nel journalling e nel logging
+				    </p>
+					<p>* Performance e funzionalità nel mercato azionario e nel processamento degli ordini
+				    </p>
+					<p>* Affidabilità nel Secure document timestamps, richiesto nelle certifiche di crittatura.
+				    </p>
+					<p>* Affidabilità nei sistemi di sicurezza quali ID (Intrusion Detection) e IPS (Intrusion Prevention System)
+				    </p>
+					<p>* Sincronizzazione di applicativi multimedia per teleconferenze in tempo reale
+				    </p>
+					<p>* Monitoraggio e controllo della rete aziendale
+				    </p>
+					<p>* Individuazione anticipata di malfunzionamenti di alcuni apparati sulla rete.
+				    </p>
+					<p>* Affidabilità, funzionalità e performance nei servizi di &quot;traffic engineering&quot; quali il &quot;differentiated services&quot; per reti MPLS.
+				    </p>
+				  <p>* Affidabilità, funzionalità e performance nelle reti distribuite per l'addestramento professionale. </p>
+                  <h4> Come funziona il GPS</h4>
+                    <p> Ad un'altezza di circa 20.000km dei satelliti girano intorno alla terra due volte al giorno su 6 orbite differenti formando una rete che avvolge la terra. Il primo sistema GPS fu sviluppato sulla base di 21 satelliti di cui 3 di riserva. Col passare del tempo il numero di satelliti è passato a 27 per coprire possibili mancanze di copertura per brevi periodi. Da 6 ad 11 di questi satelliti sono sono visibili da ogni punto della terra per tutto il tempo. A bordo ogni satellite ha un orologio atomico ad alta precisione (1x10-12) Una frequenza base di 10.23 Mhz è derivata dalla frequenza dell'orologio atomico. Questa frequenza viene inviata attraverso due segnali di trasporto L1 ed L2 elaborati sulla stessa frequenza base.    </p>
+                    <p>* la frequenza di trasmissione L1 = 154 * 10,23 = 1575,42Mhz                      </p>
+                    <p>* la frequenza di trasmissione L2 = 120 * 10,23 = 1227,60Mhz                      </p>
+                    <p>I segnali trasmessi da ogni satellite vengono interpolati ed utilizzati per i sistemi di navigazione e di sincronizzazione. I dati della frequenza L1 possono essere decodificati per uso civile. Il tempo esatto può essere calcolato da queste informazioni e dalla posizione che viene stabilita dall'antenna. </p>
+              </div>
+				<div>
+  			  <%= link_to "torna alla homepage", root_path, :class => "links" %>
+				</div>
+		  </div>
+		</div>
+    		<!-- end #content -->
+
+    		<div id="indexsidebar">
+    			<ul>
+    				<li>
+    					<h3>Go Green</h3>
+    					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+    				</li>
+    				<li>
+              <%= render 'shared/portfolio' %>
+    				</li>
+    				<li>
+              <%= render 'shared/soluzioni' %>
+    				</li>
+    			</ul>
+    		</div>
+    <!-- end #sidebar -->
+
+
+    		<div style="clear: both;">
+    			&nbsp;
+    		</div>
+    	</div>
+    <!-- end #page -->
+    </div>
+
+
+    <div id="footer">
+    	<p>
+    		Copyright (c) 2011 htscs srl. All rights reserved.
+    	</p>
+    </div>
+    <!-- end #footer -->

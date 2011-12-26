@@ -1,0 +1,59 @@
+<%= render 'shared/nav_menu' %>
+
+<div id="indexpage">
+  <div id="page-bgtop">
+		<div id="content">
+
+			<div class="post">
+				<p class="meta"> Posted by <a href="#">Marketing Team</a></p>
+				<h2 class="title"><a href="#">IFS9000 Cablaggio Intelligente</a></h2>
+				<div class="entry">
+					<p>IFS9000 aiuta le aziende a sviluppare i requisiti di un “nuovo” datacenter con l’offerta della sua linea di cablaggio in fibra ottica “intelligente”. I sistemi in fibra ottica IFS9000 sono progettati per minimizzare la richiesta di spazio rack fornendo pannelli e cabinet modulari che incorporano un’intelligenza hardware e software. Quest’intelligenza “embedded” semplifica le procedure di implementazione, manutenzione e gestione dei collegamenti in fibra di tutto il CED. rendendo le connessioni veloci, affidabili e “visivamente guidate”, il sistema IFS9000 riduce drasticamente i tempi richiesti per la pianificazione ed attuazione di spostamenti, aggiunte e cambi di configurazione eliminando problematiche di disservizi dovute ad errori di configurazione o di installazione.</p>
+			  </div>
+				<div></div>
+			</div>
+			
+			<div class="post">				
+				<h2 class="title"><a href="#">Descrizione tecnica</a></h2>
+				<div class="entry">
+					<p> Il sistema si basa su un hardware composto da armadi rack centrali e di zona dove sono allocati i pannelli e la parte elettronica di intelligenza. I pannelli supportano tutti i tipi di connettori in fibra ottica presenti sul mercato e tutti i tipi di standard ( Multi Mode 62,5/125- Multi Mode 50/125 – Single Mode 9/125 OC3) : Escon, SC duplex, LC duplex, SFF, MTRJ, SSDI. I pannelli possono essere composti da 24 fino a 144 porte con un ingombro che varia dalle 3 alle 6 unità. Nella parte posteriore sono presenti i trunks di connessione fra zona o device ( CPU o Director ) con tecnologia MTP ,certificati e configurabili sul sistema di gestione per una rapida individuazione in caso di fault. Ogni porta è identificata in maniera univoca da un LED ed è configurata sul sistema di gestione ( Opti Manager) che ha una GUI grafica dove sono riportati tutti gli armadi , i pannelli, le porte presenti per pannello e le eventuali connessioni con altre porte. Esiste un data-base con tutte le connessioni attive , le porte libere a disposizione e i patchs disponibili per le connessioni. Tramite una procedura guidata denominata work-order, il cliente può facilmente implementare o disimplementare le connessioni dei device presenti nel centro elettronico. Il software genera dei report con tutte le informazioni riguardanti le connessioni attive pannello per pannello, quelle libere, tipologia di fibra, etc. I diagrammi sono personalizzabili dal cliente e con un modulo aggiuntivo è possibile generare un disegno del centro elettronico(CAD) dove sono presenti gli armadi di cablaggio e tutti gli altri device presenti. Per tutti quei clienti che sono già in possesso di un cablaggio intelligente modello IFS9000 della Inrange vi è una totale compatibilità sia dal punto di vista hardware che software fra i due sistemi che diverranno un solo sistema integrato salvaguardando l’investimento.</p>
+			  </div>
+				<div>
+				  <%= link_to "torna alla homepage", root_path, :class => "links" %>  			  
+				</div>
+		  </div>
+
+		</div>
+    		<!-- end #content -->
+
+    		<div id="indexsidebar">
+    			<ul>
+    				<li>
+    					<h3>Go Green</h3>
+    					<p>80% di risparmio energetico, 80% di risparmio di spazio, 80% di risparmio per il raffreddamento, questi sono alcuni dei &quot;Green Benefits&quot; di Xiotech.</p>
+    				</li>
+    				<li>
+              <%= render 'shared/portfolio' %>
+    				</li>
+    				<li>
+              <%= render 'shared/soluzioni' %>
+    				</li>
+    			</ul>
+    		</div>
+    <!-- end #sidebar -->
+
+
+    		<div style="clear: both;">
+    			&nbsp;
+    		</div>
+    	</div>
+    <!-- end #page -->
+    </div>
+
+
+    <div id="footer">
+    	<p>
+    		Copyright (c) 2011 htscs srl. All rights reserved.
+    	</p>
+    </div>
+    <!-- end #footer -->

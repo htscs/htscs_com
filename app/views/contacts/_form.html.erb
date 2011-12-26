@@ -1,0 +1,20 @@
+<h1>Contatti</h1>
+<%# form_for(:session, :url => sessions_path) do |f| %>
+
+<%= form_for @contact, :url => { :action => "create" }, :html => { :method => :post } do |f| %>
+  
+    <%= f.label "Nome" %>
+    <%= f.text_field :sender_name, :placeholder => "inserisci il nome completo" %>
+
+    <%= f.label "Email" %>
+    <%= f.text_field :email, :placeholder => "inserisci l'indirizzo email"  %>
+
+    <%#= f.label "Type" %>
+    <%#= f.select :support_type, options_for_select(["Bug", "Ask", "Idea"]) %>
+
+    <%= f.label "Messaggio" %>
+    <%= f.text_area :content, :placeholder => "inserisci il tuo messaggio"  %>
+
+    <%= f.submit "invia" %>
+
+<% end %>
