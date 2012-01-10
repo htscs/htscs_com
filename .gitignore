@@ -17,21 +17,6 @@ db/*.sqlite3*
 log/*.log
 *.log
 /tmp
-<<<<<<< HEAD
-log/*.log
-*.log
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-log/*.log
-*.log
->>>>>>> master
-=======
-log/*.log
-*.log
->>>>>>> master
->>>>>>> FB
 /tmp/
 doc/
 *.swp
