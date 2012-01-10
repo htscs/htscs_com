@@ -1,32 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <%# vecchie intestazioni -- inizio %>
-	<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
-	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-	<!-- favicon compatibile con MS Explorer -->
- 	<meta name="Keywords" content="" />
-	<meta name="Description" content="" />	
-  	<meta http-equiv="refresh" />        	
-  <%# vecchie intestazioni -- fine %>
-
   <title>Htscs <%= @title %></title>
-
-
-  <%= stylesheet_link_tag    "application" %> 
-  <%#= stylesheet_link_tag "style.css", :media => "screen"%>
-  <%#= stylesheet_link_tag "orbit.css", :media => "screen"%>  
- 
-  
+  <%# la favicon.ico deve restare su public come i files 404.html 422.html 500.html in caso il server sia giù %>
+  <%= stylesheet_link_tag    "application" %>   
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
-<%= javascript_include_tag "application" %>
-
+  <%= javascript_include_tag "application" %>
 </body>
 </html>
